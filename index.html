@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrioElectromax | Linea Blanca</title>
+    <!-- estilo -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- fontawesome iconos-->
+    <script src="./js/all.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- BARRA DE CONTACTO -->
+    <div id="barra-contacto" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-lg-2 pt-2 txt-sm-centrar"> 
+                <span> <i class="fas fa-phone"></i> +51 935452862 </span>
+            </div>
+            <div class="d-none d-xl-block col-lg-3 pt-2">
+                <span> <i class="fas fa-envelope"></i> frielectromax1@gmail.com </span>
+            </div>
+            <div class="d-none d-xl-block col-lg-3 pt-2">
+                <span> <i class="fas fa-map-marker"></i> Calle Juan Matta 202 - Nasca </span>
+            </div>
+            <div class="col-lg-4 col-sm-6 txt-sm-centrar">
+                <div class="rs float-sm-none float-lg-end">
+
+                    <a href="https://www.facebook.com/maximo.morales.10"" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/+51956406045"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN BARRA DE CONTACTO -->
+
+    <!-- MENU PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg bg-celeste">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" height="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.php?p=inicio"> <i
+                            class="fa fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=nosotros"> <i class="fa fa-hotel"></i> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.php?p=servicios" class="nav-link"> <i class="fa fa-hand-holding"></i>
+                        Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.php?p=contacto" class="nav-link"> <i class="fas fa-headset"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- FIN MENU PRINCIPAL -->
+
+    <!-- CONTENIDO -->
+
+    <?php
+
+// Verificamos si el parámetro 'p' está definido en la URL
+
+
+
+?>
+
+    <!-- CONTENIDO -->
+
+    <!-- PIE DE PAGINA -->
+
+    <footer id="pie" class="container-fluid">
+    <div class="row justify-content-center">
+        <!-- Direccion -->
+        <div class="col-xl-4 col-sm-12 text-center text-white">
+            <div class="col">
+                <img src="./images/logo.png" height="250">
+                <br><br>
+                <p class="fs-direccion">NASCA - Juan Matta 202</p>
+                <p>Telf: +51 935452862</p>
+                <hr class="mx-auto w-50">
+                <div class="rs2">
+                    <a href="https://www.facebook.com/maximo.morales.10" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/+51956406045"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Lista menu -->
+        <div class="col-xl-3 col-sm-12 pt-4 listamenu d-none d-xl-block">
+            <ul class="menu" type="circle">
+                <li> <a href="index.php?p=inicio">Inicio</a> </li>
+                <li> <a href="index.php?p=nosotros">Nosotros</a> </li>
+                <li> <a href="index.php?p=servicios">Servicios</a> </li>
+                <li> <a href="index.php?p=contacto">Contacto</a> </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+    <div class="container-fluid bg-black text-white p-3">
+        <div class="row">
+            <div class="col text-center">
+                <p>Copyright &copy; 2024 -
+                    <a href="https://www.facebook.com/maximo.morales.10">FrioElectromax</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FIN PIE DE PAGINA -->
+
+    <!-- GALERIA -->
+    <script id="bs5-lightbox"></script>
+    <script>
+    var lightboxScript = document.getElementById('bs5-lightbox');
+    var src = './js/galeria.js'
+    var searchParams = new URLSearchParams(window.location.search);
+    lightboxScript.src = src;
+    </script>
+
+</body>
+
+</html>
